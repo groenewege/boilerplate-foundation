@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>G-Design UX Document</title>
+  <title>WEBSITE</title>
   {{ "normalize.css" | asset_url | stylesheet_tag }}
   {{ "app.css" | asset_url | stylesheet_tag }}
   <script src="{{ "custom.modernizr.js" | asset_url }}"></script>
 </head>
-<body class="gdesign">
-  {% include "header" %}
+<body class="frontend">
+  {% include "header_frontend" %}
   {% block content %}{% endblock %}
-  {% include "footer" %}
+  {% include "footer_frontend" %}
 </body>
 </html>

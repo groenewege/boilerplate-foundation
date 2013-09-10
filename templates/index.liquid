@@ -1,81 +1,35 @@
-{% block content %} 
-	<div class="row">
+{% block content %}
+
+    <div class="content row">
         <div class="large-12 columns">
-            <h2>Welcome to Foundation</h2>
-            <p>This is version {{ global.version }}.</p>
-            <hr />
+
+            <p>Ce document détaille le fonctionnement de chaque module, montre un prototype basique de chaque page et mets en  évidence les questions importantes que je me pose. Merci de me faire parvenir vos réponses, remarques et corrections.</p>
+
+            <blockquote><em>Dans ce document on essaie de définir le fonctionnement de la nouvelle section afin d’obtenir une expérience utilisateur ergonomique qui corresponde aux besoins mentionnés dans votre cahier des charges.
+            <br />
+            Le site internet doit permettre aux visiteurs d’atteindre le résultat recherché dans un temps minimal et avec peu d’effort.
+            <br />
+            On s’intéresse particulièrement à la navigation, à la hiérarchie du site, à la structure de chaque page et à l’efficacité de l’interface.</em></blockquote>
+
+            <h2>1. Première section du document</h2>
+
+            <figure><a href="/page"><img src="{{ "page.png" | asset_url }}"></a></figure>
+
+            <h4>Explication</h4>
+            {{ 3 | lorem_ipsum:'p' }}
+
+            <h4>Questions</h4>
+            <div class="panel">
+                <ul>
+                    {{ 2 | lorem_ipsum:'li' }}
+                </ul>
+            </div>
+
+            <p>&nbsp;</p>
+            <h4 class="center">Merci de me faire parvenir vos réponses, remarques et corrections.</h4>
+            <h4 class="center"><a href="http://g-design.net"><img src="{{ "logo.png" | asset_url }}"></a></h4>
+
         </div>
     </div>
 
-    <div class="row">
-        <div class="large-8 columns">
-            <h3>The Grid</h3>
-
-            <!-- Grid Example -->
-            <div class="row">
-                <div class="large-12 columns">
-                    <div class="panel">
-                        <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-6 columns">
-                    <div class="panel">
-                        <p>Six columns</p>
-                    </div>
-                </div>
-                <div class="large-6 columns">
-                    <div class="panel">
-                        <p>Six columns</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-4 columns">
-                    <div class="panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-                <div class="large-4 columns">
-                    <div class="panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-                <div class="large-4 columns">
-                    <div class="panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-            </div>
-
-            <h3>Buttons</h3>
-
-      <div class="row">
-        <div class="large-6 columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
-        </div>
-        <div class="large-6 columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-        </div>
-      </div>
-        </div>
-
-        <div class="large-4 columns">
-            <h4>Getting Started</h4>
-            <p>We're stoked you want to try Foundation! To get going, this file (index.liquid) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-            <h4>Other Resources</h4>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <ul class="disc">
-                <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-                <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-                <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-            </ul>
-        </div>
-    </div>
 {% endblock %}
