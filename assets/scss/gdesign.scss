@@ -74,10 +74,42 @@
 }
 
 table tr .info {
-	color: #fff;
-	background-color: #999;
-	border-bottom: 1px solid #ccc;
-	a {
-		color: #fff;
-	}
+  color: #fff;
+  background-color: #999;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  a {
+    color: #fff;
+  }
+  .button {
+    margin: 5px 0;
+  }
+}
+
+.label {
+  font-size: 13px;
+}
+
+.sidebar {
+  background-color: #f2f2f2;
+  padding: 1em;
+}
+
+.panel {
+  background-color: #cee7f6;
+}
+
+.filter {
+  th {
+    text-align: left;
+    background-color: #cee7f6;
+  }
+  select {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.alert {
+  color: red;
 }
